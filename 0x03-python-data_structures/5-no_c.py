@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    result = []
+    result = ''
     for letter in my_string:
-        if letter != 'c' and letter != 'C':
-            result.append(letter)
-    return ''.join(result)
+        if letter not in 'cC':
+            result += letter
+    return result
 
 print(no_c("Best School"))
 print(no_c("Chicago"))
